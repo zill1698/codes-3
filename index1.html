@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title> HTML dom elements</title>
+    </head>
+    <body>
+        <h1 onclick="this.innerHTML='learning dom elements'"> HTML DOM ELEMENTS </h1>
+        <button onclick="functionabc()"> click me </button>
+        <p id="p1"> </p>
+        <button onclick="displaydate()"> time </button>
+        <p id="p2"> </p>
+        <script>
+          function  functionabc(){
+            document.getElementById("p1").innerHTML="my name is zill";
+          }
+          function displaydate(){
+            document.getElementById("p2").innerHTML=Date();
+          }
+        </script>
+    </body>
+</html>

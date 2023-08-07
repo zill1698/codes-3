@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title> input </title>
+    </head>
+    <body>
+        enter your name: <input type="text" id="t1" onchange="uppercase()"> 
+        <p id="p1"> </p>
+        <script>
+            var b=prompt("enter your name");
+            document.getElementById("p1").innerHTML=b.toUpperCase();
+
+            function uppercase(){
+                const x=document.getElementById("t1");
+                x.value=x.value.toUpperCase();
+            }
+        </script>
+    </body>
+</html>
